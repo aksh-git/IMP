@@ -1,0 +1,49 @@
+@import url('../assets/font-awesome-4.7.0/css/font-awesome.css');
+@import url('../css/index.css');
+#LMPLayoutContainer {
+	width: max-content;
+	height: max-content;
+	-webkit-transition: -webkit-transform 0.33s;
+	transition: transform 0.33s; /* Animate the transform properties */
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d; /* <-NB */
+}
+#LMPLayoutFront{
+	height: max-content;
+    width: max-content;
+}
+#LMPLayoutFront img{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid rgba(147, 184, 189, 0.8);
+}
+#LMPLayoutBottom {
+	background: #969696;
+	border: 1px solid rgba(147, 184, 189, 0.8);
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+    max-width: 300px;
+	height: min-content;
+    width: max-content;
+    padding: 5px 10px;
+    margin-top: -30px;
+}
+/* Position the faces */
+#LMPLayoutFront {
+	-webkit-transform: translateZ(70px);
+	transform: translateZ(70px);
+}
+#LMPLayoutBottom {
+	-webkit-transform: rotateX(-90deg) translateZ(-70px);
+	transform: rotateX(-90deg) translateZ(-70px);
+}
+#LMPLayoutContainer:hover {
+	-webkit-transform: rotateX(90deg);
+	transform: rotateX(90deg); 
+}
+#LMPbtns {
+    color: white;
+}
+#playPauseBtn{
+    font-size: 50px;
+}
