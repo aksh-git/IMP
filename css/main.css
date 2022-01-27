@@ -1,5 +1,5 @@
 @import url('../assets/font-awesome-4.7.0/css/font-awesome.css');
-@import url('../css/index.css');
+@import url('../css/index.scss');
 
 #IMPLayoutContainer {
 	width: max-content;
@@ -16,7 +16,6 @@
 #IMPLayoutFront img{
     border-radius: 5px;
     -webkit-border-radius: 5px;
-    border: 1px solid rgba(147, 184, 189, 0.8);
 }
 #IMPLayoutBottom {
 	background: rgb(150, 150, 150, 0.8);
@@ -49,3 +48,4 @@
 #playPauseBtn{
     font-size: 50px;
 }
+
