@@ -1,5 +1,6 @@
 @import url('../assets/font-awesome-4.7.0/css/font-awesome.css');
 @import url('../css/index.css');
+
 #IMPLayoutContainer {
 	width: max-content;
 	height: max-content;
@@ -18,7 +19,7 @@
     border: 1px solid rgba(147, 184, 189, 0.8);
 }
 #IMPLayoutBottom {
-	background: #969696;
+	background: rgb(150, 150, 150, 0.8);
 	border: 1px solid rgba(147, 184, 189, 0.8);
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
@@ -39,10 +40,11 @@
 }
 #IMPLayoutContainer:hover {
 	-webkit-transform: rotateX(90deg);
-	transform: rotateX(90deg); 
+	transform: rotateX(70deg); 
 }
-#IMPbtns {
+#IMPbtns i{
     color: white;
+    cursor: pointer;
 }
 #playPauseBtn{
     font-size: 50px;
