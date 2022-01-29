@@ -118,7 +118,7 @@ function play(elem){
     }else{
         elem.classList.remove("fa-pause-circle");
         elem.classList.add("fa-play-circle");
-        pauseTrack()
+        pauseTrack();
     }
 }
 
@@ -167,11 +167,12 @@ function pauseTrack() {
 }  
 
 function nextTrack() {
-    if (track_index < track_list.length - 1)
-      track_index += 1;
-    else track_index = 0;
-    loadTrack(track_index);
-    playTrack();
+    if (track_index < track_list.length - 1){
+        track_index += 1;
+    }
+    else{
+       newSet();
+    }
 }
 
 function loadTrack(index) {

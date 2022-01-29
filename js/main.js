@@ -13,9 +13,10 @@ const basicIMPLayout = `
         </div>
         <div id="IMPbtns_2">
           <i title="Load New Play-List" onclick="refreshSongs(this)" class="white fa fa-refresh" aria-hidden="true"></i>
-          <i title="More Info" onclick="" class="white fa fa-info-circle" aria-hidden="true"></i>
+          <i title="More Info" onclick="moreInfo()" class="white fa fa-info-circle" aria-hidden="true"></i>
         </div>
       </div>
+      <span></span>
     </div>
 `;
 let IMPLayout = document.getElementById("IMPLayout");
@@ -35,10 +36,13 @@ function random_bg_color() {
   playerbg.style.background = bgColor;
 }
 
+function moreInfo(){
+  window.open("https://github.com/aksh-git/IMP#imp---js");
+}
+
 window.onload = () =>{
   initIMPLayout();
   random_bg_color();
   loadNewSet();
   loadTrack(0);
 }
-
