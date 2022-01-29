@@ -1,13 +1,20 @@
 @import url('../assets/font-awesome-4.7.0/css/font-awesome.css');
-@import url('../css/index.scss');
-
+.white {
+    color: #ffffff;
+}
+.black {
+    color: #000000;
+}
+body{
+	background: black;
+}
 #IMPLayoutContainer {
-	width: max-content;
-	height: max-content;
+	width: min-content;
+	height: min-content;
 	-webkit-transition: -webkit-transform 0.33s;
-	transition: transform 0.33s; /* Animate the transform properties */
+	transition: transform 0.33s; 
 	-webkit-transform-style: preserve-3d;
-	transform-style: preserve-3d; /* <-NB */
+	transform-style: preserve-3d;
 }
 #IMPLayoutFront{
 	height: max-content;
@@ -21,9 +28,8 @@
 	background: rgb(150, 150, 150, 0.5);
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-    max-width: 300px;
 	height: min-content;
-    width: max-content;
+    width: min-content;
     padding: 5px 10px;
     margin-top: -30px;
 }
@@ -38,11 +44,19 @@
 }
 #IMPLayoutContainer:hover {
 	-webkit-transform: rotateX(90deg);
-	transform: rotateX(70deg); 
+	transform: rotateX(90deg); 
 }
 #IMPbtns i{
     color: white;
     cursor: pointer;
+}
+#IMPbtns_2{
+	display: flex;
+}
+#IMPbtns_2 i{
+	cursor: pointer;
+	font-size: 20px;
+	padding: 0 3px 0 3px;
 }
 #playPauseBtn{
     font-size: 50px;

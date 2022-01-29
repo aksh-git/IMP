@@ -9,7 +9,11 @@ const basicIMPLayout = `
       </div>
       <div id="IMPLayoutBottom">
         <div id="IMPbtns">  
-            <i id="playPauseBtn" onclick="play(this)" class="fa fa-play-circle-o" aria-hidden="true"></i>
+            <i id="playPauseBtn" onclick="play(this)" class="fa fa-play-circle" aria-hidden="true"></i>
+        </div>
+        <div id="IMPbtns_2">
+          <i title="Load New Play-List" onclick="refreshSongs(this)" class="white fa fa-refresh" aria-hidden="true"></i>
+          <i title="More Info" onclick="" class="white fa fa-info-circle" aria-hidden="true"></i>
         </div>
       </div>
     </div>
@@ -27,7 +31,7 @@ function random_bg_color() {
   let red = Math.floor(Math.random() * 256) + 64;
   let green = Math.floor(Math.random() * 256) + 64;
   let blue = Math.floor(Math.random() * 256) + 64;
-  let bgColor = "rgb(" + red + ", " + green + ", " + blue + ",0.8)";
+  let bgColor = "rgb(" + red + ", " + green + ", " + blue + ",0.4)";
   playerbg.style.background = bgColor;
 }
 
@@ -37,3 +41,4 @@ window.onload = () =>{
   loadNewSet();
   loadTrack(0);
 }
+

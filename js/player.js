@@ -111,17 +111,21 @@ let combinations = [
 ]
 
 function play(elem){
-    if(elem.classList.contains("fa-play-circle-o")){
-        elem.classList.remove("fa-play-circle-o");
-        elem.classList.add("fa-pause-circle-o");
+    if(elem.classList.contains("fa-play-circle")){
+        elem.classList.remove("fa-play-circle");
+        elem.classList.add("fa-pause-circle");
         playTrack();
     }else{
-        elem.classList.remove("fa-pause-circle-o");
-        elem.classList.add("fa-play-circle-o");
+        elem.classList.remove("fa-pause-circle");
+        elem.classList.add("fa-play-circle");
         pauseTrack()
     }
 }
 
+function refreshSongs(elem){
+   newSet();
+   playTrack();
+}
 //loadMusic
 function loadNewSet(){
     currPlayListIndex = getPlayListIndex();
@@ -177,3 +181,13 @@ function loadTrack(index) {
     random_bg_color();
 }
 
+function newSet(){
+    mPlayed.clear();
+    currSongsIndex.clear();
+    track_index=0;
+    track_list = [];
+    currPlayListIndex = 0;
+    currPlayList = null;
+    loadNewSet();
+    loadTrack(track_index);
+}
