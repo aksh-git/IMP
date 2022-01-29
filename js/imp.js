@@ -8,7 +8,7 @@ const basicIMPLayout = `
         </div>
       </div>
       <div id="IMPLayoutBottom">
-      <span></span>
+      <span id="songIcon">&#9834;</span>
         <div id="IMPbtns">  
             <i title="Play/Pause" id="playPauseBtn" onclick="play(this)" class="fa fa-play-circle" aria-hidden="true"></i>
         </div>
@@ -21,10 +21,12 @@ const basicIMPLayout = `
 `;
 let IMPLayout = document.getElementById("IMPLayout");
 let playerbg;
+let songIcon;
 
 function initIMPLayout(){
     IMPLayout.innerHTML=basicIMPLayout;
     playerbg = document.getElementById("IMPLayoutBottom");
+    songIcon = document.getElementById("songIcon");
 }
 
 function random_bg_color() {

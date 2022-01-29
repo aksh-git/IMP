@@ -7,6 +7,7 @@ let currSongsIndex = new Set();
 let curr_track = document.createElement('audio');
 let track_index = 0;
 let track_list = [];
+let songAnimationInterval;
 
 let songs={
     "1":{
@@ -159,11 +160,13 @@ function getPlayListIndex(){
 function playTrack() {
     curr_track.play();
     isPlaying = true;
+    playSongAnimation();
 }
 
 function pauseTrack() {
     curr_track.pause();
     isPlaying = false;
+    playSongAnimation();
 }  
 
 function nextTrack() {
@@ -172,6 +175,7 @@ function nextTrack() {
     }
     else{
        newSet();
+       playTrack();
     }
 }
 
@@ -192,3 +196,23 @@ function newSet(){
     loadNewSet();
     loadTrack(track_index);
 }
+
+function randomColor(){
+    let red = Math.floor(Math.random() * 256) + 64;
+    let green = Math.floor(Math.random() * 256) + 64;
+    let blue = Math.floor(Math.random() * 256) + 64;
+    let bgColor = "rgb(" + red + ", " + green + ", " + blue +")";
+    return bgColor;
+}
+
+function playSongAnimation(){
+    if(isPlaying){
+        songAnimationInterval = setInterval(()=>{
+            songIcon.style.color = randomColor();
+            playerbg.style.borderColor = randomColor();
+        },700);
+    }else{
+        clearInterval(songAnimationInterval);
+    }
+}
+

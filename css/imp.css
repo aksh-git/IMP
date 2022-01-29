@@ -26,6 +26,7 @@ body{
 }
 #IMPLayoutBottom {
 	background: rgb(150, 150, 150, 0.5);
+	border: 1px solid #ffffff;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	height: min-content;
@@ -34,15 +35,11 @@ body{
     margin-top: -30px;
 }
 #IMPLayoutBottom span{
-	background: white;
-	height: 5px;
-	width: 5px;
-	margin: 0 0 0 5px;
-	border-radius: 50%;
+	color: #ffffff;
 	padding: 0;
 	position: absolute;
-	left: 0;
-	box-shadow: 1px 1px 3px #ffffff;
+	right: 0;
+	top: 0;
 }
 /* Position the faces */
 #IMPLayoutFront {
