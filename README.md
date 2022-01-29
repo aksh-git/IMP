@@ -1,5 +1,6 @@
-# IMP - JS 
-Integrated Music Player - javascript
+# &#9834; IMP - JS
+Integrated Music Player - javascript \
+Playlist of relaxing music...
 
 ### Add IMP - CSS
     <!-- IMP StyleSheet -->
