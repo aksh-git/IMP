@@ -15,11 +15,27 @@ const basicIMPLayout = `
     </div>
 `;
 let IMPLayout = document.getElementById("IMPLayout");
+let playerbg;
+
 
 function initIMPLayout(){
     IMPLayout.innerHTML=basicIMPLayout;
+    playerbg = document.getElementById("IMPLayoutBottom");
+}
+
+function random_bg_color() {
+  let red = Math.floor(Math.random() * 256) + 64;
+  let green = Math.floor(Math.random() * 256) + 64;
+  let blue = Math.floor(Math.random() * 256) + 64;
+  let bgColor = "rgb(" + red + ", " + green + ", " + blue + ",0.8)";
+  playerbg.style.background = bgColor;
 }
 
 window.onload = () =>{
-    initIMPLayout();
+  initIMPLayout();
+  fetch("../assets/songs.json").then(response => {
+    return response.json();
+  }).then(jsondata => console.log(jsondata));
+  random_bg_color();
+  //loadTrack(1);
 }
