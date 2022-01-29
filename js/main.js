@@ -33,9 +33,7 @@ function random_bg_color() {
 
 window.onload = () =>{
   initIMPLayout();
-  fetch("../assets/songs.json").then(response => {
-    return response.json();
-  }).then(jsondata => console.log(jsondata));
   random_bg_color();
-  //loadTrack(1);
+  loadNewSet();
+  loadTrack(0);
 }
