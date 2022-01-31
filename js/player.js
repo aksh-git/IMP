@@ -3,7 +3,6 @@ let mPlayed = new Set();
 let currPlayListIndex;
 let currPlayList;
 let currSongsIndex = new Set();
-// Create the audio element for the player
 let curr_track = document.createElement('audio');
 let track_index = 0;
 let track_list = [];
@@ -172,6 +171,8 @@ function pauseTrack() {
 function nextTrack() {
     if (track_index < track_list.length - 1){
         track_index += 1;
+        loadTrack(track_index);
+        playTrack();
     }
     else{
        newSet();
@@ -180,7 +181,7 @@ function nextTrack() {
 }
 
 function loadTrack(index) {
-    curr_track.src = songs[track_list[track_index]]["path"]
+    curr_track.src = songs[track_list[index]]["path"]
     curr_track.load();
     curr_track.addEventListener("ended", nextTrack);
     random_bg_color();
