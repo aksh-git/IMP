@@ -1,21 +1,21 @@
 const basicIMPLayout = `
-    <div id="IMPLayoutContainer">
-      <div id="IMPLayoutFront">
-        <div id="IMPMusicLogo">
-          <img width="30%" id="IMPMusicLogoIcon" src="https://cdn.jsdelivr.net/gh/aksh-git/IMP@master/assets/images/icons/defaultMusicIcon.jpg">
-        </div>
-      </div>
-      <div id="IMPLayoutBottom">
-      <span id="songIcon">&#9834;</span>
-        <div id="IMPbtns">  
-            <i title="Play/Pause" id="playPauseBtn" onclick="play(this)" class="fa fa-play-circle" aria-hidden="true"></i>
-        </div>
-        <div id="IMPbtns_2">
-          <i title="Load New Play-List" onclick="refreshSongs(this)" class="white fa fa-refresh" aria-hidden="true"></i>
-          <i title="More Info" onclick="moreInfo()" class="white fa fa-info-circle" aria-hidden="true"></i>
-        </div>
+  <div id="IMPLayoutContainer">
+    <div id="IMPLayoutFront">
+      <div id="IMPMusicLogo">
+        <img width="30%" id="IMPMusicLogoIcon" src="https://cdn.jsdelivr.net/gh/aksh-gitIMP@master/assets/images/icons/defaultMusicIcon.jpg">
       </div>
     </div>
+    <div id="IMPLayoutBottom">
+      <span id="songIcon">&#9834;</span>
+      <div id="IMPbtns">  
+          <i title="Play/Pause" id="playPauseBtn" onclick="play(this)" class="fafa-play-circle" aria-hidden="true"></i>
+      </div>
+      <div id="IMPbtns_2">
+        <i title="Load New Play-List" onclick="refreshSongs(this)" class="white fafa-refresh" aria-hidden="true"></i>
+        <i title="More Info" onclick="moreInfo()" class="white fa fa-info-circle"aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
 `;
 let IMPLayout = document.getElementById("IMPLayout");
 let playerbg;
