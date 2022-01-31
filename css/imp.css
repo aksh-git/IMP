@@ -12,11 +12,6 @@
 	transition: transform 0.33s; 
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-<<<<<<< HEAD
-	z-index: 999;
-=======
-	z-index:100;
->>>>>>> d3a64d2a9face4d4b5ade431cef0d91dc7f5a736
 }
 #IMPLayoutFront{
 	height: max-content;
