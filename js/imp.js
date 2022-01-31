@@ -3,7 +3,7 @@ const basicIMPLayout = `
       <div id="IMPLayoutFront">
         <div id="IMPMusicLogo">
           <span class="gradient-border">
-            <img width="30%" id="IMPMusicLogoIcon" src="./assets/images/icons/defaultMusicIcon.jpg">
+            <img width="30%" id="IMPMusicLogoIcon" src="http://cdn.rawgit.com/aksh-git/IMP/master/assets/images/icons/defaultMusicIcon.jpg">
           </span>
         </div>
       </div>
