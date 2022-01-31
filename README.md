@@ -4,13 +4,13 @@ Playlist of relaxing music...
 
 ### Add IMP - CSS
     <!-- IMP StyleSheet -->
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/aksh-git/IMP/master/css/imp.css">
+    <link rel="stylesheet" href="http://cdn.rawgit.com//aksh-git/IMP/master/css/imp.css">
 ### Add IMP - Script    
     <!-- IMP Main Script -->
-    <script src="https://raw.githubusercontent.com/aksh-git/IMP/master/js/imp.js"></script>
+    <script src="http://cdn.rawgit.com//aksh-git/IMP/master/js/imp.js"></script>
     
     <!-- IMP Player Script -->
-    <script src="https://raw.githubusercontent.com/aksh-git/IMP/master/js/player.js"></script>
+    <script src="http://cdn.rawgit.com//aksh-git/IMP/master/js/player.js"></script>
     
 ### Add IMP - Element     
     <div id="IMPLayout"></div>
