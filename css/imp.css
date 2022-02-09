@@ -5,6 +5,9 @@
 .black {
     color: #000000;
 }
+#IMPLayout{
+	width: max-content;
+}
 #IMPLayoutContainer {
 	width: min-content;
 	height: min-content;
