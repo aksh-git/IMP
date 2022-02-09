@@ -31,7 +31,7 @@ function random_bg_color() {
   let red = Math.floor(Math.random() * 256) + 64;
   let green = Math.floor(Math.random() * 256) + 64;
   let blue = Math.floor(Math.random() * 256) + 64;
-  let bgColor = "rgb(" + red + ", " + green + ", " + blue + ",0.4)";
+  let bgColor = "rgb(" + red + ", " + green + ", " + blue + ",0.8)";
   playerbg.style.background = bgColor;
 }
 

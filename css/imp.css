@@ -27,6 +27,7 @@
 }
 #IMPLayoutBottom {
 	background: rgb(150, 150, 150, 0.5);
+	backdrop-filter: blur(5px);
 	border: 1px solid #ffffff;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
@@ -69,5 +70,8 @@
 }
 #playPauseBtn{
     font-size: 50px;
+}
+#songIcon{
+	margin: 0 5%;
 }
 
